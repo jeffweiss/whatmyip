@@ -1,6 +1,6 @@
 require 'sinatra'
 
 get '*' do
-  content_type :text
-  request.ip
+  content_type :html
+  "<html><body>#{request.ip}</body></html>"
 end
